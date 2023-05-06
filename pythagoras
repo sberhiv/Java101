@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class pythagoras {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+int a,b,c;
+double s, alan;
+Scanner input= new Scanner(System.in);
+System.out.println("İlk kenar uzunluğunu giriniz: ");
+a= input.nextInt();
+System.out.println("ikinci kenar uzunluğunu giriniz: ");
+b=input.nextInt();
+System.out.println("Üçüncü kenar uzunuluğunu giriniz: ");
+c=input.nextInt();
+
+s=(a+b+c)/2;
+alan= Math.sqrt(s*(s-a)*(s-b)*(s-c));
+System.out.println("Üçgenin alanı: "+alan);
+	}
+
+}
